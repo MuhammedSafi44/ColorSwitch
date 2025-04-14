@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Switch Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>Color Switch</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Play</a>
+                <a href="#">Leaderboard</a>
+                <a href="#">How to Play</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="game-wrapper">
+        <div class="ad-container left-ad">
+            <div id="left-ad-space"></div>
+        </div>
+
+        <main class="main-content">
+            <div class="game-container">
+                <div class="game-overlay" id="startScreen">
+                    <h1>Color Switch Challenge</h1>
+                    <p>Match the colors to survive!</p>
+                    <button id="startButton">Start Game</button>
+                </div>
+                
+                <div class="game-overlay" id="gameOverScreen" style="display: none;">
+                    <h2>Game Over!</h2>
+                    <p>Your Score: <span id="finalScore">0</span></p>
+                    <div class="share-buttons">
+                        <button id="shareTwitter"><i class="fab fa-twitter"></i> Share on Twitter</button>
+                        <button id="shareFacebook"><i class="fab fa-facebook"></i> Share on Facebook</button>
+                        <button id="shareWhatsApp"><i class="fab fa-whatsapp"></i> Share on WhatsApp</button>
+                    </div>
+                    <button id="restartButton">Play Again</button>
+                </div>
+
+                <canvas id="gameCanvas"></canvas>
+                
+                <div class="score-container">
+                    <i class="fas fa-star"></i>
+                    <span id="score">0</span>
+                </div>
+            </div>
+        </main>
+
+        <div class="ad-container right-ad">
+            <div id="right-ad-space"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Color Switch Challenge is a fast-paced, color-matching game that tests your reflexes and timing.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Color Switch Challenge. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html> 
